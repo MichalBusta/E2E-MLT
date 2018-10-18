@@ -14,7 +14,7 @@ code base for:  https://arxiv.org/abs/1801.09919
  - RCTW-17 (http://mclab.eic.hust.edu.cn/icdar2017chinese/)
  - Synthetic MLT Data ([Arabic](http://ptak.felk.cvut.cz/public_datasets/SyntText/Arabic.zip), [Bangla](http://ptak.felk.cvut.cz/public_datasets/SyntText/Bangla.zip), [Chinese](http://ptak.felk.cvut.cz/public_datasets/SyntText/Chinese.zip), [Japanese](http://ptak.felk.cvut.cz/public_datasets/SyntText/Japanese.zip), [Korean](http://ptak.felk.cvut.cz/public_datasets/SyntText/Korean.zip)  )
 
-![MLT SynthSet][images/synth.png]
+![MLT SynthSet](images/synth.png)
 
 What we have found useful:
  - for generating Arabic Scene Text: https://github.com/mpcabd/python-arabic-reshaper 
