@@ -16,9 +16,12 @@ code base for:  https://arxiv.org/abs/1801.09919
 
 ![MLT SynthSet](images/synth.png)
 
+Synthetic text has been generated using [Synthetic Data for Text Localisation in Natural Images](https://github.com/ankush-me/SynthText), with minor changes for Arabic and Bangla script rendering. 
+
 What we have found useful:
  - for generating Arabic Scene Text: https://github.com/mpcabd/python-arabic-reshaper 
  - for generating Bangla Scene Text: PyQt4
+ - having somebody who can read non-latin scripts: we would like to thank Ali Anas for reviewing generated Arabic scene text.
 
 
 TODO
