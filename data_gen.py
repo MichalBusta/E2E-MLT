@@ -17,7 +17,10 @@ import torchvision.transforms as transforms
 
 from mathutils.geometry import intersect_point_line
 
-from pyblur import RandomizedBlur
+use_pyblur = 0
+
+if use_pyblur == 1:
+  from pyblur import RandomizedBlur
 
 
 def get_images(data_path):
@@ -697,7 +700,7 @@ def generator(input_size=512, batch_size=4, train_list='/home/klara/klara/home/D
         pim = PIL.Image.fromarray(np.uint8(im))
         pim = transform(pim)
         
-        if random.uniform(0, 100) < 30: 
+        if use_pyblur == 1 and random.uniform(0, 100) < 30: 
           pim = RandomizedBlur(pim)
         
         im = np.array(pim)

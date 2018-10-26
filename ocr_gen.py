@@ -13,7 +13,7 @@ import torchvision.transforms as transforms
 
 use_pyblur = 0
 
-if use_pyblur:
+if use_pyblur == 1:
   from pyblur import RandomizedBlur
 
 buckets = []
