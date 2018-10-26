@@ -460,7 +460,7 @@ def main(opts):
       continue
       
     bbox_loss += net.box_loss_value.data.cpu().numpy() 
-    seg_loss += net.iou_loss_value.data.cpu().numpy()
+    seg_loss += net.segm_loss_value.data.cpu().numpy()
     angle_loss += net.angle_loss_value.data.cpu().numpy()  
       
     train_loss += loss.data.cpu().numpy()

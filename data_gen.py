@@ -191,18 +191,8 @@ def random_perspective(img, word_gto):
   dst = cv2.warpPerspective(img, M, dst_size)
   M_inv = M #np.linalg.inv(M)  
   
-  wor = np.copy(word_gto)
-  
   word_gto[:, :, 0] = word_gto[:, :, 0] *  M_inv[0, 0] + word_gto[:, :, 1] *  M_inv[0, 1] +  M_inv[0, 2]
   word_gto[:, :, 1] = word_gto[:, :, 0] *  M_inv[1, 0] + word_gto[:, :, 1] *  M_inv[1, 1] +  M_inv[1, 2]
-  
-  
-  #for i in range(0, len(word_gto) - 1):
-  #  draw_box_points(dst, word_gto[i])
-  #dst2 = cv2.resize(dst, (dst.shape[1] // 2, dst.shape[0] // 2))
-  #cv2.imshow('dst', dst2)
-  #cv2.waitKey()
-  #cv2.imwrite('/tmp/dst.png', dst)
   
   return dst
 
@@ -282,9 +272,6 @@ def generate_rbox2(im, im_size, polys, tags, labels, vis=False):
     txt = labels[poly_idx]
     pts_orig = poly_tag[0]
     angle = ( math.atan2((pts_orig[2][1] - pts_orig[1][1]), pts_orig[2][0] - pts_orig[1][0]) + math.atan2((pts_orig[3][1] - pts_orig[0][1]), pts_orig[3][0] - pts_orig[0][0]) ) / 2
-    
-    if angle > math.pi or angle < - math.pi:
-      print('Bad angle')
       
     tag = poly_tag[1]
     

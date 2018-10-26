@@ -435,12 +435,12 @@ class ModelResNetSep2(nn.Module):
   
     segm_pred = segm_preds[0].squeeze(1)
     angle_pred = angle_preds[0]
-    self.iou_loss_value = dice_loss(segm_pred * iou_mask , segm_gt * iou_mask )
+    self.segm_loss_value = dice_loss(segm_pred * iou_mask , segm_gt * iou_mask )
     segm_pred1 = segm_preds[1].squeeze(1)
     
     if self.multi_scale:
       iou_gts = F.interpolate(segm_gt.unsqueeze(1), size=(segm_pred1.size(1), segm_pred1.size(2)), mode='bilinear', align_corners=True)
-      self.iou_loss_value += dice_loss(segm_pred1, iou_gts )
+      self.segm_loss_value += dice_loss(segm_pred1, iou_gts )
       
     byte_mask = torch.gt(segm_gt, 0.5)
     
@@ -473,5 +473,5 @@ class ModelResNetSep2(nn.Module):
           roi_gt_s = roi_gt_s.permute(0, 2, 3, 1)
           iou_loss(roi_gt_s, byte_mask, roi_pred[1], self.box_loss_value)
             
-    return self.iou_loss_value +  self.angle_loss_value * 2 + 0.5 * self.box_loss_value  
+    return self.segm_loss_value +  self.angle_loss_value * 2 + 0.5 * self.box_loss_value  
     
