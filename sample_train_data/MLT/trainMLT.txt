@@ -1,0 +1,2 @@
+done/img_5407.jpg
+icdar-2015-Ch4/Train/img_784.jpg
