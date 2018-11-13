@@ -31,7 +31,7 @@ python3 demo.py -model=e2e-mlt.h5
  - [ICDAR MLT Dataset](http://rrc.cvc.uab.es/?ch=8&com=introduction)
  - [ICDAR 2015 Dataset](http://rrc.cvc.uab.es/?ch=4&com=introduction)
  - [RCTW-17](http://mclab.eic.hust.edu.cn/icdar2017chinese/)
- - Synthetic MLT Data ([Arabic](http://ptak.felk.cvut.cz/public_datasets/SyntText/Arabic.zip), [Bangla](http://ptak.felk.cvut.cz/public_datasets/SyntText/Bangla.zip), [Chinese](http://ptak.felk.cvut.cz/public_datasets/SyntText/Chinese.zip), [Japanese](http://ptak.felk.cvut.cz/public_datasets/SyntText/Japanese.zip), [Korean](http://ptak.felk.cvut.cz/public_datasets/SyntText/Korean.zip)  )
+ - Synthetic MLT Data ([Arabic](http://ptak.felk.cvut.cz/public_datasets/SyntText/Arabic.zip), [Bangla](http://ptak.felk.cvut.cz/public_datasets/SyntText/Bangla.zip), [Chinese](http://ptak.felk.cvut.cz/public_datasets/SyntText/Chinese.zip), [Japanese](http://ptak.felk.cvut.cz/public_datasets/SyntText/Japanese.zip), [Korean](http://ptak.felk.cvut.cz/public_datasets/SyntText/Korean.zip), [Latin](http://ptak.felk.cvut.cz/public_datasets/SyntText/Latin.zip)   )
 
 ![MLT SynthSet](images/synth.png)
 
