@@ -56,8 +56,6 @@ RUN conda install -y python=${python_version} && \
 # Install oytorch
 RUN conda install torchvision pytorch=0.4.1 -c pytorch
 
-# WORKDIR /src
-
 # Install Sean Naren's warp-ctc
 RUN git clone https://github.com/SeanNaren/warp-ctc.git
 RUN cd warp-ctc; mkdir build; cd build; cmake ..; make
@@ -77,5 +75,4 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN conda install -y -c menpo opencv3=3.1.0 && \
     conda clean -ya
 
-# ENV PYTHONPATH='/src/:$PYTHONPATH'
 WORKDIR /workspace
