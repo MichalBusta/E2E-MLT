@@ -25,7 +25,7 @@ def print_seq_ext(wf, codec):
       if c > 2:
           end_pos = cx
       continue
-    if c > 3 and c < len(codec):
+    if c > 3 and c < (len(codec)+4):
       ordv = codec[c - 4]
       char = ordv
       if char == ' ' or char == '.' or char == ',' or char == ':':
