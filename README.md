@@ -52,6 +52,3 @@ python3 train.py -train_list=sample_train_data/MLT/trainMLT.txt -batch_size=8 -n
 ## Acknowledgments
 
  Code borrows from [EAST](https://github.com/argman/EAST) and [DeepTextSpotter](https://github.com/MichalBusta/DeepTextSpotter)
-
-## TODO
- - update arxiv with current paper status
