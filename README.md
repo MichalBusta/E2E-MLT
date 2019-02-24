@@ -1,7 +1,17 @@
 # E2E-MLT
  E2E-MLT - an Unconstrained End-to-End Method for Multi-Language Scene Text
-
 code base for:  https://arxiv.org/abs/1801.09919
+
+
+
+```
+@article{buvsta2018e2e,
+  title={E2E-MLT-an unconstrained end-to-end method for multi-language scene text},
+  author={Bu{\v{s}}ta, Michal and Patel, Yash and Matas, Jiri},
+  journal={arXiv preprint arXiv:1801.09919},
+  year={2018}
+}
+```
 
 
 ## Requirements
@@ -52,3 +62,4 @@ python3 train.py -train_list=sample_train_data/MLT/trainMLT.txt -batch_size=8 -n
 ## Acknowledgments
 
  Code borrows from [EAST](https://github.com/argman/EAST) and [DeepTextSpotter](https://github.com/MichalBusta/DeepTextSpotter)
+ 
