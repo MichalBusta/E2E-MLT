@@ -41,9 +41,9 @@ python3 demo.py -model=e2e-mlt.h5
  - [ICDAR MLT Dataset](http://rrc.cvc.uab.es/?ch=8&com=introduction)
  - [ICDAR 2015 Dataset](http://rrc.cvc.uab.es/?ch=4&com=introduction)
  - [RCTW-17](http://mclab.eic.hust.edu.cn/icdar2017chinese/)
- - Synthetic MLT Data ([Arabic](http://ptak.felk.cvut.cz/public_datasets/SyntText/Arabic.zip), [Bangla](http://ptak.felk.cvut.cz/public_datasets/SyntText/Bangla.zip), [Chinese](http://ptak.felk.cvut.cz/public_datasets/SyntText/Chinese.zip), [Japanese](http://ptak.felk.cvut.cz/public_datasets/SyntText/Japanese.zip), [Korean](http://ptak.felk.cvut.cz/public_datasets/SyntText/Korean.zip), [Latin](http://ptak.felk.cvut.cz/public_datasets/SyntText/Latin.zip)   )
+ - Synthetic MLT Data ([Arabic](http://ptak.felk.cvut.cz/public_datasets/SyntText/Arabic.zip), [Bangla](http://ptak.felk.cvut.cz/public_datasets/SyntText/Bangla.zip), [Chinese](http://ptak.felk.cvut.cz/public_datasets/SyntText/Chinese.zip), [Japanese](http://ptak.felk.cvut.cz/public_datasets/SyntText/Japanese.zip), [Korean](http://ptak.felk.cvut.cz/public_datasets/SyntText/Korean.zip), [Latin](http://ptak.felk.cvut.cz/public_datasets/SyntText/Latin.zip) [Hindi](http://ptak.felk.cvut.cz/public_datasets/SyntText/Hindi.zip)   )
  - and converted GT to icdar MLT format (see: http://rrc.cvc.uab.es/?ch=8&com=tasks)
- ([Arabic](http://ptak.felk.cvut.cz/public_datasets/SyntText/Arabic_gt.zip), [Bangla](http://ptak.felk.cvut.cz/public_datasets/SyntText/Bangla_gt.zip), [Chinese](http://ptak.felk.cvut.cz/public_datasets/SyntText/Chinese_gt.zip), [Japanese](http://ptak.felk.cvut.cz/public_datasets/SyntText/Japanese_gt.zip), [Korean](http://ptak.felk.cvut.cz/public_datasets/SyntText/Korean_gt.zip), [Latin](http://ptak.felk.cvut.cz/public_datasets/SyntText/Latin_gt.zip)   )
+ ([Arabic](http://ptak.felk.cvut.cz/public_datasets/SyntText/Arabic_gt.zip), [Bangla](http://ptak.felk.cvut.cz/public_datasets/SyntText/Bangla_gt.zip), [Chinese](http://ptak.felk.cvut.cz/public_datasets/SyntText/Chinese_gt.zip), [Japanese](http://ptak.felk.cvut.cz/public_datasets/SyntText/Japanese_gt.zip), [Korean](http://ptak.felk.cvut.cz/public_datasets/SyntText/Korean_gt.zip), [Latin](http://ptak.felk.cvut.cz/public_datasets/SyntText/Latin_gt.zip) [Hindi](http://ptak.felk.cvut.cz/public_datasets/SyntText/Hindi_gt.zip)  )
   
 
 ![MLT SynthSet](images/synth.png)
