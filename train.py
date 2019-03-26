@@ -76,7 +76,7 @@ def process_boxes(images, im_data, iou_pred, roi_pred, angle_pred, score_maps, g
   ctc_loss_count = 0
   loss = torch.from_numpy(np.asarray([0])).type(torch.FloatTensor).cuda()
   
-  for bid in range(iou_pred[0].size(0)):
+  for bid in range(iou_pred.size(0)):
     
     gts = gtso[bid]
     lbs = lbso[bid]
