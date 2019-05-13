@@ -24,7 +24,7 @@ code base for:  https://arxiv.org/abs/1801.09919
 
 ## Pretrained Models
 
-  [e2e-mlt](http://ptak.felk.cvut.cz/public_datasets/SyntText/e2e-mlt.h5)
+  [e2e-mlt](http://ptak.felk.cvut.cz/public_datasets/SyntText/e2e-mlt.h5), [e2e-mlt-rctw](http://ptak.felk.cvut.cz/public_datasets/SyntText/e2e-mltrctw.h5)
 
 ```
 wget http://ptak.felk.cvut.cz/public_datasets/SyntText/e2e-mlt.h5
