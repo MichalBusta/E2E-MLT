@@ -135,7 +135,7 @@ def test(net, codec, args,  list_file = '/home/busta/data/icdar_ch8_validation/o
       ctc_f = ctc_f.swapaxes(1, 2)
       
       labels = ctc_f.argmax(2)
-      det_text, conf, dec_s = print_seq_ext(labels[0, :], codec)
+      det_text, conf, dec_s, _ = print_seq_ext(labels[0, :], codec)
     except:
       print('bad image')
       det_text = ''
