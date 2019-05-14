@@ -598,7 +598,8 @@ def generator(input_size=512, batch_size=4, train_list='/home/klara/klara/home/D
           continue
 
         allow_empty = False
-
+        
+        print(im_name)
         name = os.path.basename(im_name)
         name = name[:-4]
 
@@ -639,7 +640,7 @@ def generator(input_size=512, batch_size=4, train_list='/home/klara/klara/home/D
               text_polys[:, :, 0] += left
               text_polys[:, :, 1] += top
 
-          if random.uniform(0, 100) < 30:
+          if random.uniform(0, 100) < 30 and False:
             im = random_rotation(im, text_polys)
           if random.uniform(0, 100) < 30:
             im = random_perspective(im, text_polys)

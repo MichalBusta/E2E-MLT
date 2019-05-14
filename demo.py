@@ -29,7 +29,7 @@ f.close()
 def resize_image(im, max_size = 1585152, scale_up=True):
 
   if scale_up:
-    image_size = [im.shape[1] * 6 // 32 * 32, im.shape[0] * 6 // 32 * 32]
+    image_size = [im.shape[1] * 3 // 32 * 32, im.shape[0] * 3 // 32 * 32]
   else:
     image_size = [im.shape[1] // 32 * 32, im.shape[0] // 32 * 32]
   while image_size[0] * image_size[1] > max_size:
@@ -99,8 +99,8 @@ if __name__ == '__main__':
         img = Image.fromarray(draw2)
         draw = ImageDraw.Draw(img)
 
-        if len(boxes) > 10:
-          boxes = boxes[0:10]
+        #if len(boxes) > 10:
+        #  boxes = boxes[0:10]
 
         out_boxes = []
         for box in boxes:
