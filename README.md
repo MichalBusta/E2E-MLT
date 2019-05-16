@@ -56,7 +56,7 @@ What we have found useful:
  - having somebody who can read non-latin scripts: we would like to thank Ali Anas for reviewing generated Arabic scene text.
 
 
-## Trainnig
+## Training
 
 ```
 python3 train.py -train_list=sample_train_data/MLT/trainMLT.txt -batch_size=8 -num_readers=5 -debug=0 -input_size=512 -ocr_batch_size=256 -ocr_feed_list=sample_train_data/MLT_CROPS/gt.txt
