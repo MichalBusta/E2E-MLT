@@ -5,11 +5,13 @@ code base for:  https://arxiv.org/abs/1801.09919
 
 
 ```
-@article{buvsta2018e2e,
+@@inproceedings{buvsta2018e2e,
   title={E2E-MLT-an unconstrained end-to-end method for multi-language scene text},
   author={Bu{\v{s}}ta, Michal and Patel, Yash and Matas, Jiri},
-  journal={arXiv preprint arXiv:1801.09919},
-  year={2018}
+  booktitle={Asian Conference on Computer Vision},
+  pages={127--143},
+  year={2018},
+  organization={Springer}
 }
 ```
 
