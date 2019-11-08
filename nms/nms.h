@@ -74,7 +74,7 @@ namespace nms {
 				probs[2] += p.probs[2];
 				probs[3] += p.probs[3];
 
-				nr_polys += 1;
+				nr_polys += p.nr_polys;
 			}
 
 			Polygon get() const {
