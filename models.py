@@ -763,8 +763,3 @@ class ModelMLTRCTW(nn.Module):
           iou_loss(roi_gt_s, byte_mask, roi_pred[1], self.box_loss_value)
     
     return torch.stack( (self.iou_loss_value, self.angle_loss_value, self.box_loss_value) )
-              
-  
-  def combine_loss(self, losses, weights):     
-    return losses[0] * torch.exp(-weights[0]) + weights[0] + losses[1] * torch.exp(-weights[1]) + weights[1] + losses[2]  * torch.exp(-weights[2]) + weights[2] 
-    
