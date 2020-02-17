@@ -21,7 +21,7 @@ namespace nms_adaptor {
 					float(poly[1].X), float(poly[1].Y),
 					float(poly[2].X), float(poly[2].Y),
 					float(poly[3].X), float(poly[3].Y),
-					float(p.score),
+					float(p.score), float(p.nr_polys)
 					});
 		}
 
@@ -108,7 +108,8 @@ namespace nms_adaptor {
 									p[0],
 									{p_left * p_bt, p_left * p_top, p_right * p_top, p_right * p_bt},
 									x,
-									y
+									y,
+									1
 					};
 					polys.push_back(poly);
 				}

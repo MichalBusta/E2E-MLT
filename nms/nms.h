@@ -12,6 +12,7 @@ namespace nms {
 		float probs[4];
 		int x;
 		int y;
+		std::int32_t nr_polys;
 	};
 
 	float paths_area(const ClipperLib::Paths &ps) {
@@ -98,6 +99,7 @@ namespace nms {
 				p.probs[1] = probs[1];
 				p.probs[2] = probs[2];
 				p.probs[3] = probs[3];
+				p.nr_polys = nr_polys;
 
 				return p;
 			}
