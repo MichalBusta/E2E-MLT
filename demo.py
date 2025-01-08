@@ -46,6 +46,9 @@ def resize_image(im, max_size = 1585152, scale_up=True):
   scaled = cv2.resize(im, dsize=(resize_w, resize_h))
   return scaled, (resize_h, resize_w)
 
+def textsize(draw, text, font):
+  _, _, width, height = draw.textbbox((0, 0), text=text, font=font)
+  return width, height
 
 if __name__ == '__main__':
 
@@ -77,7 +80,7 @@ if __name__ == '__main__':
 
       if ret==True:
         im_resized, (ratio_h, ratio_w) = resize_image(im, scale_up=False)
-        images = np.asarray([im_resized], dtype=np.float)
+        images = np.asarray([im_resized], dtype=float)
         images /= 128
         images -= 1
         im_data = net_utils.np_to_variable(images, is_cuda=args.cuda).permute(0, 3, 1, 2)
@@ -112,7 +115,7 @@ if __name__ == '__main__':
           if len(det_text) == 0:
             continue
 
-          width, height = draw.textsize(det_text, font=font2)
+          width, height = textsize(draw, det_text, font=font2)
           center =  [box[0], box[1]]
           draw.text((center[0], center[1]), det_text, fill = (0,255,0),font=font2)
           out_boxes.append(box)

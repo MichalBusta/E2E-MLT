@@ -249,7 +249,7 @@ class ModelResNetSep2(nn.Module):
     self.conv8 = Conv2d(256, 256, (3,3), padding=1, bias=False)
     self.conv9 = Conv2d(256, 256, (3,3), padding=(1, 1), bias=False)
     self.conv10_s = Conv2d(256, 256, (2, 3), padding=(0, 1), bias=False)
-    self.conv11 = Conv2d(256, 8400, (1, 1), padding=(0,0))
+    self.conv11 = Conv2d(256, 7500, (1, 1), padding=(0,0))
     
     self.batch5 = InstanceNorm2d(128, eps=1e-05, momentum=0.1, affine=True)
     self.batch6 = InstanceNorm2d(128, eps=1e-05, momentum=0.1, affine=True)
